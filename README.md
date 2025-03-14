@@ -1,6 +1,6 @@
 # React + Encore TS Web App Starter
 
-This is an [Encore](https://encore.dev/) + [React](https://react.dev/) project starter. It's a great way to learn how to combine Encore's backend 
+This is an [Encore](https://encore.dev/) + [React](https://react.dev/) project starter. It's a great way to learn how to combine Encore's backend
 capabilities with a modern web framework — perfect for building a web app.
 
 ## Developing locally
@@ -23,11 +23,13 @@ encore app create --example=ts/react-starter
 ## Running locally
 
 Start the Encore backend:
+
 ```bash
 encore run
 ```
 
 In another terminal window, start the Vite + React frontend:
+
 ```bash
 npm run dev
 ```
@@ -82,7 +84,7 @@ global_cors: {
   "allow_origins_without_credentials": [
     "<ORIGIN-GOES-HERE>"
   ],
-        
+
   // allow_origins_with_credentials specifies the allowed origins for requests
   // that include credentials. If a request is made from an Origin in this list
   // Encore responds with Access-Control-Allow-Origin: <Origin>.
