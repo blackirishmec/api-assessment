@@ -1,4 +1,4 @@
-import { api } from "encore.dev/api";
+import { api } from 'encore.dev/api';
 
 // Welcome to Encore!
 //
@@ -9,22 +9,22 @@ import { api } from "encore.dev/api";
 let counter = 0;
 
 interface CounterResponse {
-  value: number;
+	value: number;
 }
 
 export const get = api(
-  { expose: true, method: "GET", path: "/counter" },
-  async (): Promise<CounterResponse> => {
-    return { value: counter };
-  },
+	{ expose: true, method: 'GET', path: '/counter' },
+	async (): Promise<CounterResponse> => {
+		return { value: counter };
+	},
 );
 
 export const increment = api(
-  { expose: true, method: "POST", path: "/counter" },
-  async (): Promise<CounterResponse> => {
-    counter++;
-    return { value: counter };
-  },
+	{ expose: true, method: 'POST', path: '/counter' },
+	async (): Promise<CounterResponse> => {
+		counter++;
+		return { value: counter };
+	},
 );
 
 // ==================================================================
